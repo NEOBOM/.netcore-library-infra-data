@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. NoSql", "2. NoSql", "{01F6E731-89BD-4603-AC26-F859E9F4EFDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. SqlServer", "3. SqlServer", "{8B061BE5-1436-4E86-8832-DAE8507E08D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Cache", "1. Cache", "{642A5BDB-CC67-47F2-99FD-410DF1B2E481}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otakon.Library.Infra.DataAcess.MongoDB", "Otakon.Library.Infra.DataAcess.MongoDB\Otakon.Library.Infra.DataAcess.MongoDB.csproj", "{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otakon.Library.Infra.DataAcess.SqlServer.EF", "Otakon.Library.Infra.DataAcess.SqlServer.EF\Otakon.Library.Infra.DataAcess.SqlServer.EF.csproj", "{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8} = {01F6E731-89BD-4603-AC26-F859E9F4EFDC}
+		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F} = {8B061BE5-1436-4E86-8832-DAE8507E08D8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5561789-E04C-4DC7-9473-63CAD5CD4F6D}
+	EndGlobalSection
+EndGlobal
