@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Otakon.Library.Infra.DataAcess.SqlServer.EF
+namespace Library.Infra.DataAcess.SqlServer.EF
 {
     public class DbClient : DbContext
     {

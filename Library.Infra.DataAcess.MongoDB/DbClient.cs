@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Otakon.Library.Infra.DataAcess.MongoDB
+namespace Library.Infra.DataAcess.MongoDB
 {
     public abstract class DbClient
     {

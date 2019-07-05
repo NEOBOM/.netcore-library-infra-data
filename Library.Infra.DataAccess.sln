@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. SqlServer", "3. SqlServe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Cache", "1. Cache", "{642A5BDB-CC67-47F2-99FD-410DF1B2E481}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otakon.Library.Infra.DataAcess.MongoDB", "Otakon.Library.Infra.DataAcess.MongoDB\Otakon.Library.Infra.DataAcess.MongoDB.csproj", "{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Infra.DataAcess.MongoDB", "Library.Infra.DataAcess.MongoDB\Library.Infra.DataAcess.MongoDB.csproj", "{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Otakon.Library.Infra.DataAcess.SqlServer.EF", "Otakon.Library.Infra.DataAcess.SqlServer.EF\Otakon.Library.Infra.DataAcess.SqlServer.EF.csproj", "{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Infra.DataAcess.SqlServer.EF", "Library.Infra.DataAcess.SqlServer.EF\Library.Infra.DataAcess.SqlServer.EF.csproj", "{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

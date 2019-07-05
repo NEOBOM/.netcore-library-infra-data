@@ -6,7 +6,7 @@ using System.Linq;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 
-namespace Otakon.Library.Infra.DataAcess.SqlServer.EF
+namespace Library.Infra.DataAcess.SqlServer.EF
 {
     public abstract class DataContext<TEntity>  where TEntity : class
     {

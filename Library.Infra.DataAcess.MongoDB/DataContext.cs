@@ -8,7 +8,7 @@ using MongoDB.Driver;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Conventions;
 
-namespace Otakon.Library.Infra.DataAcess.MongoDB
+namespace Library.Infra.DataAcess.MongoDB
 {
     public abstract class DataContext<TEntity> : DbClient where TEntity : class
     {
