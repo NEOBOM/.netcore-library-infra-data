@@ -12,7 +12,7 @@ namespace Library.Infra.DataAcess.MongoDB
 {
     public abstract class DataContext<TEntity> : DbClient where TEntity : class
     {
-        public DataContext(string mongoDbName, IMongoClient mongoClient, string collectionName) : base(mongoDbName, mongoClient, collectionName)
+        public DataContext(IMongoClient mongoClient, string mongoDbName, string collectionName) : base(mongoClient, mongoDbName, collectionName)
         {
         }
 
@@ -142,5 +142,33 @@ namespace Library.Infra.DataAcess.MongoDB
         //        });
         //    }
         //}
+
+        protected async Task ChangeStreamsAsync(ChangeStreamOperationType changeStreamOperationType, Action<TEntity> action)
+        {
+            var pipeline = new EmptyPipelineDefinition<ChangeStreamDocument<TEntity>>().Match(x => x.OperationType == changeStreamOperationType);
+
+            using (var cursor = await Collection<TEntity>().WatchAsync(pipeline))
+            {
+                await cursor.ForEachAsync(change =>
+                {
+                    if (change.OperationType == changeStreamOperationType)
+                        action(change.FullDocument);
+                });
+            }
+        }
+
+        protected void ChangeStreamsSync(ChangeStreamOperationType changeStreamOperationType, Action<TEntity> action)
+        {
+            var pipeline = new EmptyPipelineDefinition<ChangeStreamDocument<TEntity>>().Match(x => x.OperationType == changeStreamOperationType);
+
+            using (var cursor = Collection<TEntity>().Watch(pipeline))
+            {
+                cursor.ForEachAsync(change =>
+                {
+                    if (change.OperationType == changeStreamOperationType)
+                        action(change.FullDocument);
+                });
+            }
+        }
     }
 }

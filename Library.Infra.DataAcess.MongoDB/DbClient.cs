@@ -11,7 +11,7 @@ namespace Library.Infra.DataAcess.MongoDB
         protected readonly string _collectionName;
         protected readonly IMongoDatabase _db = null;
 
-        protected DbClient(string mongoDbName, IMongoClient mongoClient, string collectionName)
+        protected DbClient(IMongoClient mongoClient, string mongoDbName, string collectionName)
         {
             if (string.IsNullOrEmpty(mongoDbName))
                 throw new Exception("DbName is empty. DbName is necessary for access a DataBase");

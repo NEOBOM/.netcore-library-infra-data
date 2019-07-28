@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Infra.DataAcess.Mon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library.Infra.DataAcess.SqlServer.EF", "Library.Infra.DataAcess.SqlServer.EF\Library.Infra.DataAcess.SqlServer.EF.csproj", "{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Test", "3. Test", "{9A665AEC-B73E-4A2B-A821-241DB6A8B54B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Infra.DataAcess.ConsoleTest", "Library.Infra.DataAcess.ConsoleTest\Library.Infra.DataAcess.ConsoleTest.csproj", "{BECBA11B-5D3B-444A-BADF-8E26C02C894F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,10 @@ Global
 		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BECBA11B-5D3B-444A-BADF-8E26C02C894F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECBA11B-5D3B-444A-BADF-8E26C02C894F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECBA11B-5D3B-444A-BADF-8E26C02C894F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECBA11B-5D3B-444A-BADF-8E26C02C894F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1D77FC5E-DCE5-4260-B1C3-9163BDF9EFC8} = {01F6E731-89BD-4603-AC26-F859E9F4EFDC}
 		{90E43BCD-A6FD-4A98-ABD9-0E51FEFC912F} = {8B061BE5-1436-4E86-8832-DAE8507E08D8}
+		{BECBA11B-5D3B-444A-BADF-8E26C02C894F} = {9A665AEC-B73E-4A2B-A821-241DB6A8B54B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E5561789-E04C-4DC7-9473-63CAD5CD4F6D}
